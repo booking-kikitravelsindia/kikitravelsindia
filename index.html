@@ -6,6 +6,10 @@
 <title>Travel Website</title>
 
 <style>
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,11 +17,14 @@ body {
 
 /* Navbar */
 nav {
+    position: fixed;
+    width: 100%;
     background: #0a1f44;
     color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
 }
 nav a {
     color: white;
@@ -25,16 +32,20 @@ nav a {
     text-decoration: none;
 }
 
-/* Hero Section */
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Hero */
 .hero {
     background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
-    height: 90vh;
+    height: 100vh;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
 }
 .hero h1 {
     font-size: 50px;
@@ -48,15 +59,11 @@ nav a {
 }
 
 /* Packages */
-.packages {
-    padding: 40px;
-    text-align: center;
-}
 .cards {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 .card {
     width: 300px;
@@ -75,11 +82,9 @@ nav a {
 footer {
     background: #0a1f44;
     color: white;
-    text-align: center;
     padding: 20px;
 }
 </style>
-
 </head>
 
 <body>
@@ -88,45 +93,54 @@ footer {
 <nav>
     <h2>My Travels</h2>
     <div>
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
         <a href="#packages">Packages</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
+<!-- Home -->
+<section id="home" class="hero">
     <h1>Explore the World</h1>
     <p>Best travel deals for you</p>
-    <a href="#" class="btn">Book Now</a>
+    <a href="#contact" class="btn">Book Now</a>
 </section>
 
 <!-- Packages -->
-<section id="packages" class="packages">
+<section id="packages">
     <h2>Popular Packages</h2>
-
     <div class="cards">
-
         <div class="card">
             <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
             <h3>Maldives</h3>
         </div>
-
         <div class="card">
             <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
             <h3>Dubai</h3>
         </div>
-
         <div class="card">
             <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1">
             <h3>Switzerland</h3>
         </div>
-
     </div>
 </section>
 
+<!-- About -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>We provide world-class travel experiences with the best packages and support.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: mytravel@email.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
 <!-- Footer -->
-<footer id="contact">
+<footer>
     <p>© 2026 My Travels | All Rights Reserved</p>
 </footer>
 
