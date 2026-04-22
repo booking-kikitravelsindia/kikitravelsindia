@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Website</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: #0a1f44;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+    height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 50px;
+}
+.btn {
+    background: orange;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Packages */
+.packages {
+    padding: 40px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+}
+.card h3 {
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>My Travels</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Packages</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Explore the World</h1>
+    <p>Best travel deals for you</p>
+    <a href="#" class="btn">Book Now</a>
+</section>
+
+<!-- Packages -->
+<section class="packages">
+    <h2>Popular Packages</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090">
+            <h3>Maldives</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
+            <h3>Dubai</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1">
+            <h3>Switzerland</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 My Travels | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
